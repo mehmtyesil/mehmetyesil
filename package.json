@@ -1,0 +1,71 @@
+{
+  "name": "boilerplate",
+  "version": "2.3.1",
+  "description": "A boilerplate for building web projects with Gulp.js.",
+  "author": "Tanju Yildiz <ben@tanjuyildiz.com>",
+  "license": "MIT",
+  "keywords": [
+    "boilerplate",
+    "gulp.js",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "clean": "gulp clean",
+    "dev": "npm run clean && npm run start",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "sprites": "gulp sprites",
+    "archive": "npm run clean && npm run build && gulp archive",
+    "preversion": "npm run clean",
+    "version": "npm run build",
+    "postversion": "gulp archive && git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavisland/boilerplate.git"
+  },
+  "homepage": "https://github.com/mavisland/boilerplate",
+  "bugs": {
+    "url": "https://github.com/mavisland/boilerplate/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "cross-env": "^7.0.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-header": "^2.0.9",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-wait": "^0.0.2",
+    "gulp-zip": "^5.1.0",
+    "gulp.spritesmith": "^6.13.0",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.19"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
+    "jquery": "3.6.1",
+    "owl.carousel": "^2.3.4",
+    "vov.css": "mavisland/vov.css"
+  }
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+//## Abstracts
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/breakpoints";
+@import "abstracts/variables";
+
+//## Packages
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/bootnavbar/scss/bootnavbar";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+@import "vendor/owl-carousel/scss/owl.carousel";
+@import "vendor/owl-carousel/scss/owl.theme.default";
+@import "vendor/fancybox/fancybox";
+@import "vendor/vov.css/vov";
+
+//## Base
+@import "base/generic";
+@import "base/commons";
+
+//## Helpers
+@import "vendor/helpers/scss/back-to-top";
+@import "vendor/helpers/scss/captcha";
+@import "vendor/helpers/scss/gallery";
+
+//## Elements
+@import "elements/buttons";
+@import "elements/forms";
+@import "elements/section";
+@import "elements/block";
+@import "elements/content";
+@import "elements/banner";
+@import "elements/breadcrumbs";
+@import "elements/pagination";
+@import "elements/misc";
+
+//## Layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+//## Components
+// @import "components/example";
