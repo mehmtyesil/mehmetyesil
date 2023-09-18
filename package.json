@@ -57,7 +57,7 @@
     "gulp-zip": "^5.1.0",
     "gulp.spritesmith": "^6.13.0",
     "node-sass": "^8.0.0",
-    "postcss": "^8.4.19"
+    "postcss": "^8.4.29"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
