@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "jquery": "3.6.1",
